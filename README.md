@@ -1,2 +1,3 @@
-# sm
-SM challenge
+# SM Solutions Architect Challenge
+
+
