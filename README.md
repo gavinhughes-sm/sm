@@ -27,6 +27,8 @@ Create a lambda using the AWS console as per the instructions here : https://doc
 
 The code for the lambda is in sendemail-index.js
 
+You will need to insert your API keys for both Mailgun and Sendgrid and the Domain for Mailgrid into the code in the marked places (these are not yet externalised to lambda environment variables).
+
 ## Expose the lambda via the AWS API Gateway
 
 Create and deploy a REST API for the lambda function as per the instructions here : https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-getting-started-with-rest-apis.html
@@ -34,6 +36,6 @@ Create and deploy a REST API for the lambda function as per the instructions her
 * The resource should be called /sendEmail
 * A POST method should be created that invokes the sendEmail lambda via Lambda proxy integration.  
 
-Logs should be geneerated to Cloudwatch for both the lambda and the API Gateway
+Logs should be generated to Cloudwatch for both the lambda and the API Gateway
 
 
